@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flexify - Software für Planung und Organisation von Arbeitsprozessen in großen Firmen.">
+    <title>Flexify Webshop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px 0;
+            background-color: white;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        /* Barrierefreiheit: Kontrast und Fokus */
+        a:focus, button:focus {
+            outline: 2px solid #007bff;
+        }
+        /* Farbschema: Blau und Weiß für Konsistenz */
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Willkommen bei Flexify</h1>
+    <p>Ihre Software für effiziente Planung und Organisation in großen Unternehmen.</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#lizenz">Lizenz</a></li>
+        <li><a href="#datenschutz">Datenschutz</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="#impressum">Impressum</a></li>
+        <li><a href="#barrierefreiheit">Barrierefreiheit</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<section id="home">
+    <h2>Unser Produkt: Flexify Pro</h2>
+    <div class="product">
+        <img src="https://commons.wikimedia.org/wiki/File:Project_management.png#/media/File:Project_management.png" alt="Illustration der Projektmanagement-Software" width="300" height="200">
+        <p>Flexify Pro ist eine Businessanwendung zur Planung und Organisation von Arbeitsprozessen in großen Firmen.</p>
+        <h3>Funktionen:</h3>
+        <ul>
+            <li>Task-Management mit Zuweisung und Priorisierung</li>
+            <li>Team-Collaboration-Tools (Chat, Dateifreigabe)</li>
+            <li>Scheduling und Kalender-Integration</li>
+            <li>Reporting und Analytics</li>
+            <li>Integration mit bestehenden Systemen (API)</li>
+        </ul>
+        <h3>Zielgruppe:</h3>
+        <p>Große Unternehmen mit mehr als 100 Mitarbeitern, Projektmanager, Teamleiter und IT-Abteilungen.</p>
+        <h3>Geschäftsmodell:</h3>
+        <p>Abo-Modell: Monatlich ab 99€ pro Nutzer, mit Freemium-Option für bis zu 5 Nutzer.</p>
+        <button onclick="alert('Kauf wird simuliert. Vielen Dank!')">Jetzt kaufen (Mock)</button>
+    </div>
+    
+    <!-- Integrierte Medien -->
+    <h3>Demo-Video</h3>
+    <video controls width="600" aria-label="Demo-Video von Flexify Pro">
+        <source src="https://example.com/demo-video.mp4" type="video/mp4">
+        Ihr Browser unterstützt das Video-Tag nicht.
+    </video>
+    <p>Quelle: Eigene Produktion, alle Rechte bei Flexify GmbH.</p>
+    
+    <h3>Soundeffekt-Beispiel</h3>
+    <audio controls aria-label="Beispiel-Soundeffekt für Benachrichtigungen">
+        <source src="https://freesound.org/data/previews/612/612095_5674468-lq.mp3" type="audio/mpeg">
+        Ihr Browser unterstützt das Audio-Tag nicht.
+    </audio>
+    <p>Lizenz: CC0 von Freesound.org</p>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>Unternehmensname: Flexify GmbH</p>
+    <p>Standort: Wien, Österreich</p>
+    <p>Anzahl der Mitarbeiter: 10</p>
+    <p>Gegründet: 2025</p>
+    
+    <h3>Unsere Marken</h3>
+    <p>Wir haben drei unterschiedliche Markenformen entwickelt:</p>
+    <ol>
+        <li><strong>Wortmarke:</strong> "Flexify" - Steht für Flexibilität in der Organisation. Geschützt in Nizza-Klasse 9 (Software) und 42 (IT-Dienste).</li>
+        <li><strong>Bildmarke:</strong> Ein abstraktes Logo aus ineinandergreifenden Zahnrädern, symbolisiert Zusammenarbeit. Nizza-Klasse 9.</li>
+        <li><strong>Klangmarke:</strong> Ein kurzer, motivierender Ton für Erfolgsbenachrichtigungen. Nizza-Klasse 9.</li>
+    </ol>
+    <p>Bedeutung: Unsere Marken betonen Flexibilität, Innovation und Zuverlässigkeit. Wir haben über EUIPO eSearch überprüft, dass keine Verletzungen vorliegen (Wortwahl einzigartig, Farben neutral, Formen originell).</p>
+</section>
+
+<section id="lizenz">
+    <h2>Lizenz</h2>
+    <p>Durch den Kauf von Flexify Pro erwerben Sie folgende Nutzungsrechte:</p>
+    <ul>
+        <li>Nutzung der Software für interne Zwecke in Ihrem Unternehmen.</li>
+        <li>Updates und Support für die Abo-Dauer.</li>
+    </ul>
+    <p>Rechte, die beim Unternehmen verbleiben:</p>
+    <ul>
+        <li>Alle Urheberrechte und geistigen Eigentumsrechte.</li>
+        <li>Verbot der Weiterverbreitung oder Modifikation ohne Zustimmung.</li>
+    </ul>
+    <p>Haftungsbeschränkungen: Flexify GmbH haftet nicht für indirekte Schäden, Datenverlust oder Ausfälle. Haftung beschränkt auf den Kaufpreis.</p>
+</section>
+
+<section id="datenschutz">
+    <h2>Datenschutzerklärung</h2>
+    <p>Wir verarbeiten personenbezogene Daten gemäß DSGVO.</p>
+    <p>Prozesse:</p>
+    <ul>
+        <li>Kontaktformular: Speicherung von Name, E-Mail für Anfragen.</li>
+        <li>Analyse-Tools: Google Analytics (mocked) für Nutzungsstatistiken, mit Opt-Out.</li>
+        <li>Cookies: Funktionale Cookies für Session-Management.</li>
+    </ul>
+    <p>Rechte: Auskunft, Löschung per E-Mail an datenschutz@flexify.at.</p>
+    <p>Verantwortlicher: Flexify GmbH, Wien.</p>
+</section>
+
+<section id="kontakt">
+    <h2>Kontakt</h2>
+    <form aria-label="Kontaktformular">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Nachricht:</label>
+        <textarea id="message" name="message" required></textarea><br>
+        <button type="submit" onclick="alert('Nachricht gesendet (Mock)')">Senden</button>
+    </form>
+</section>
+
+<section id="impressum">
+    <h2>Impressum</h2>
+    <p>Gemäß § 24 Mediengesetz:</p>
+    <p>Medieninhaber: Flexify GmbH</p>
+    <p>Sitz: Wien, Österreich</p>
+    <p>Adresse: Musterstraße 1, 1010 Wien</p>
+    <p>E-Mail: info@flexify.at</p>
+    <p>Telefon: +43 1 123456</p>
+    <p>Firmenbuchnummer: FN 123456a</p>
+    <p>UID: ATU12345678</p>
+    <p>Zweck: Vertrieb von Software</p>
+</section>
+
+<section id="barrierefreiheit">
+    <h2>Barrierefreiheitserklärung</h2>
+    <p>Diese Website ist WCAG 2.2 AA konform. Wir haben mit WAVE und AXE DevTools getestet.</p>
+    <p>Nicht konforme Inhalte: Keine bekannt.</p>
+    <p>Erklärung erstellt am: 06.01.2026</p>
+    <p>Kontakt für Feedback: barrierefrei@flexify.at</p>
+</section>
+
+<h2>Urheberrechtshinweise</h2>
+<p>Alle verwendeten Medien:</p>
+<ul>
+    <li>Bilder: Von Wikimedia Commons, CC-BY-SA Lizenz. Quelle: https://commons.wikimedia.org</li>
+    <li>Videos: Eigene Produktion, alle Rechte vorbehalten.</li>
+    <li>Sounds: Freesound.org, CC0.</li>
+    <li>Schriftarten: Standard Arial, public domain.</li>
+    <li>Texte: Eigene Inhalte.</li>
+</ul>
+<p>Verwertungsrechte: Nur für diese Website, keine kommerzielle Weiternutzung ohne Lizenz.</p>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Flexify GmbH. Alle Rechte vorbehalten.</p>
+</footer>
+
+</body>
+</html>

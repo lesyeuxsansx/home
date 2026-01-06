@@ -1,0 +1,166 @@
+/* style.css – Flexify Dark Theme (inspiriert von GreenThumb AI) */
+
+:root {
+    --primary: #42a5f5;        /* Akzent-Blau für Buttons und Highlights */
+    --primary-dark: #1976d2;
+    --background: #121212;    /* Dunkles Haupt-Hintergrund */
+    --surface: #1e1e1e;       /* Etwas hellere Karten */
+    --text: #e0e0e0;          /* Heller Text */
+    --text-secondary: #aaaaaa;
+    --logo-blue: #42a5f5;     /* Für dein Flexify-Logo-Farbschema */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+header {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+                url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    height: 60px;
+}
+
+nav {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+nav a {
+    color: var(--text);
+    margin-left: 30px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+header h1 {
+    font-size: 3.8rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+header p {
+    font-size: 1.4rem;
+    max-width: 800px;
+    margin-bottom: 3rem;
+    color: rgba(255,255,255,0.9);
+}
+
+.btn {
+    background: white;
+    color: #121212;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--primary);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Sections */
+section {
+    padding: 100px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: white;
+}
+
+/* Marken-Karten */
+.marken-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.marke-card {
+    background: var(--surface);
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+.marke-card img {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.marke-card h3 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.marke-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+/* Markenschutz-Box */
+.markenschutz {
+    background: var(--surface);
+    border-left: 5px solid var(--primary);
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 60px;
+}
+
+.markenschutz h3 {
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 60px 20px;
+    background: #0a0a0a;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Responsiv */
+@media (max-width: 768px) {
+    .logo { top: 20px; left: 20px; height: 50px; }
+    nav { top: 20px; right: 20px; }
+    nav a { display: block; margin: 10px 0; }
+    header h1 { font-size: 2.8rem; }
+    header p { font-size: 1.2rem; }
+}

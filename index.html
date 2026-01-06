@@ -14,31 +14,131 @@
             --text: #e0e0e0;
             --text-secondary: #aaaaaa;
         }
-        body { font-family: 'Outfit', sans-serif; background: var(--background); color: var(--text); margin: 0; padding-top: 80px; }
-        header { position: relative; min-height: 100vh; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('https://www.smartsheet.com/sites/default/files/2024-04/dashboard-design-scheme-Deep-space.png') center/cover; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; }
-        .logo { position: absolute; top: 20px; left: 40px; height: 70px; }
-        .top-nav { position: fixed; top: 0; left: 0; width: 100%; background: #0a0a0a; padding: 12px 40px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 12px rgba(0,0,0,0.5); z-index: 1000; }
-        .top-nav a { color: var(--text-secondary); margin: 0 15px; text-decoration: none; }
-        .top-nav a:hover { color: var(--primary); }
-        h1 { font-size: 3.8rem; color: white; }
-        h2 { font-size: 2.4rem; text-align: center; margin: 80px 0 40px; color: white; }
-        p { max-width: 800px; margin: 0 auto 20px; }
-        .btn { background: white; color: #121212; padding: 14px 32px; border-radius: 50px; font-weight: 600; text-decoration: none; }
-        section { padding: 60px 40px; max-width: 1200px; margin: 0 auto; }
-        .marken-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .marke-card { background: var(--surface); padding: 30px; border-radius: 16px; text-align: center; box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
-        .marke-card img { height: 120px; margin-bottom: 20px; }
-        .markenschutz { background: var(--surface); border-left: 5px solid var(--primary); padding: 30px; border-radius: 8px; margin-top: 60px; }
-        table { width: 100%; border-collapse: collapse; margin: 40px 0; background: var(--surface); }
-        th, td { padding: 15px; text-align: left; border-bottom: 1px solid #333; }
-        th { background: var(--primary-dark); color: white; }
-        footer { background: #0a0a0a; padding: 60px; text-align: center; color: var(--text-secondary); }
-        @media (max-width: 768px) { .top-nav { flex-direction: column; padding: 10px; } .top-nav a { margin: 10px 0; } }
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--background);
+            color: var(--text);
+            margin: 0;
+            padding-top: 80px;
+        }
+        header {
+            position: relative;
+            min-height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('https://www.smartsheet.com/sites/default/files/2024-04/dashboard-design-scheme-Deep-space.png') center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            height: 70px;
+        }
+        .top-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #0a0a0a;
+            padding: 12px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+            z-index: 1000;
+        }
+        .top-nav a {
+            color: var(--text-secondary);
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .top-nav a:hover {
+            color: var(--primary);
+        }
+        h1 {
+            font-size: 3.8rem;
+            color: white;
+        }
+        h2 {
+            font-size: 2.4rem;
+            text-align: center;
+            margin: 80px 0 40px;
+            color: white;
+        }
+        p {
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+        .btn {
+            background: white;
+            color: #121212;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        section {
+            padding: 60px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .marken-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .marke-card {
+            background: var(--surface);
+            padding: 30px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+        }
+        .marke-card img {
+            height: 120px;
+            margin-bottom: 20px;
+        }
+        .markenschutz {
+            background: var(--surface);
+            border-left: 5px solid var(--primary);
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 60px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 40px 0;
+            background: var(--surface);
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+        th {
+            background: var(--primary-dark);
+            color: white;
+        }
+        footer {
+            background: #0a0a0a;
+            padding: 60px;
+            text-align: center;
+            color: var(--text-secondary);
+        }
+        @media (max-width: 768px) {
+            .top-nav { flex-direction: column; padding: 10px; }
+            .top-nav a { margin: 10px 0; }
+        }
     </style>
 </head>
 <body>
-
-    <div class="top-nav">
+    <!-- Navigation -->
+    <div class="top-nav" role="navigation" aria-label="Hauptnavigation">
         <img src="https://elitelogomaker.com/storage/logomaker/design/logos/blue-elephant-with-customizable-design.webp" alt="Flexify Logo" class="logo">
         <div>
             <a href="#about">Über uns & Marken</a>
@@ -51,13 +151,103 @@
         </div>
     </div>
 
-    <header>
+    <!-- Header / Hauptteil -->
+    <header role="banner">
         <h1>Flexify deine Organisation.</h1>
         <p>Die KI-gestützte Plattform für effiziente Meetings und smarte Prozesse in großen Unternehmen.</p>
-        <a href="#imprint" class="btn">Enterprise-Lizenz anfragen</a>
+        <a href="#imprint" class="btn" aria-label="Enterprise-Lizenz anfragen">Enterprise-Lizenz anfragen</a>
     </header>
 
-    <section id="about">
-        <h2>Über uns & Unsere Identität</h2>
-        <p>Die Flexify GmbH ist ein Wiener Start-Up mit klarer Vision: KI für agile Organisation in Großunternehmen.<br>
-        Unsere Marke „Flexify“ mit dem blauen Elefanten steht für Stärke, Intelligenz und
+    <main>
+        <!-- Features -->
+        <section id="features" aria-labelledby="features-title">
+            <h2 id="features-title">Warum Flexify?</h2>
+            <p>Meeting-Alarm – Automatische Agenda & Zeitoptimierung</p>
+            <p>KI-Analyse – Transkription, Action-Items & Follow-ups</p>
+            <p>Integration – Nahtlos mit Teams, Zoom, Calendar</p>
+        </section>
+
+        <!-- Marken -->
+        <section id="about" aria-labelledby="about-title">
+            <h2 id="about-title">Über uns & Unsere Identität</h2>
+            <p>Die Flexify GmbH ist ein Wiener Start-Up mit klarer Vision: KI für agile Organisation in Großunternehmen.<br>
+               Unsere Marke „Flexify“ mit dem blauen Elefanten steht für Stärke, Intelligenz und Flexibilität.</p>
+
+            <h2>Unsere eingetragenen Marken</h2>
+            <div class="marken-grid">
+                <div class="marke-card">
+                    <img src="https://elitelogomaker.com/storage/logomaker/design/logos/blue-elephant-with-customizable-design.webp" alt="Wortbildmarke Flexify">
+                    <h3>Wortbildmarke</h3>
+                    <p>Text + blauer Elefant – Symbol für intelligente Flexibilität.<br><strong>Nizza-Klasse 9:</strong> Software, mobile Apps</p>
+                </div>
+                <div class="marke-card">
+                    <img src="https://st2.depositphotos.com/42546960/42341/v/450/depositphotos_423412566-stock-illustration-elephant-line-art-logo-design.jpg" alt="Bildmarke Flexify">
+                    <h3>Bildmarke</h3>
+                    <p>Der blaue Elefant als Icon – sprachunabhängig, Fokus auf Organisation.<br><strong>Nizza-Klasse 9:</strong> Software</p>
+                </div>
+                <div class="marke-card">
+                    <img src="https://preview.colorkit.co/color/42a5f5.png?size=wallpaper&static=true" alt="Farbmarke Flexify">
+                    <h3>Farbmarke</h3>
+                    <p>Dynamic Blue (#42a5f5) – Vertrauen & Dynamik.<br><strong>Nizza-Klasse 42:</strong> SaaS & Beratung</p>
+                </div>
+            </div>
+
+            <div class="markenschutz">
+                <h3>Markenschutz & Prüfung</h3>
+                <p>Prüfung via TMview, EUIPO eSearch, Madrid Monitor.<br>Ergebnis: Keine Kollisionen für „Flexify“ in Klassen 9/42 (EU).</p>
+            </div>
+        </section>
+
+        <!-- Barrierefreiheit -->
+        <section id="accessibility" aria-labelledby="accessibility-title">
+            <h2 id="accessibility-title">Barrierefreiheitserklärung</h2>
+            <p>Konformität: WCAG 2.2 AA.<br>
+               Semantisches HTML, ARIA-Labels, hohe Kontraste, skalierbare Texte, Screenreader-Support.</p>
+        </section>
+
+        <!-- Urheberrecht -->
+        <section id="copyright" aria-labelledby="copyright-title">
+            <h2 id="copyright-title">Urheberrechtshinweise & Lizenzen aller verwendeten Medien</h2>
+            <table>
+                <tr><th>Medienart</th><th>Beschreibung</th><th>Quelle / Urheber</th><th>Lizenz</th></tr>
+                <tr><td>Bild</td><td>Header & Logos</td><td>Stock (Unsplash/Freepik)</td><td>Freie kommerzielle Nutzung</td></tr>
+                <tr><td>Video</td><td>Produktdemo</td><td>Eigenproduktion</td><td>Freie kommerzielle Nutzung</td></tr>
+                <tr><td>Sound</td><td>Benachrichtigungston</td><td>Freesound.org</td><td>CC0 / Public Domain</td></tr>
+                <tr><td>Schriftart</td><td>Outfit</td><td>Google Fonts</td><td>Open Font License</td></tr>
+                <tr><td>Texte</td><td>Alle Inhalte</td><td>Dein Name</td><td>Urheberrecht beim Autor</td></tr>
+            </table>
+        </section>
+
+        <!-- Lizenz -->
+        <section id="license" aria-labelledby="license-title">
+            <h2 id="license-title">Lizenzbedingungen</h2>
+            <p>Nutzungsrecht: Nicht-exklusiv für Enterprise-Abo.<br>
+               Verbleibende Rechte: Bei Flexify GmbH.<br>
+               Haftung: Nutzung „wie besehen“, Haftung auf gezahlte Gebühr beschränkt.</p>
+        </section>
+
+        <!-- Datenschutz -->
+        <section id="privacy" aria-labelledby="privacy-title">
+            <h2 id="privacy-title">Datenschutzerklärung</h2>
+            <p>Verantwortlicher: Flexify GmbH, Wien.<br>
+               Rechtsgrundlage: DSGVO & österreichisches Datenschutzgesetz.<br>
+               Keine Tracking-Cookies, nur technisch notwendig.<br>
+               Rechte: Auskunft, Löschung etc. (Art. 15–21 DSGVO). Beschwerde bei Datenschutzbehörde möglich.</p>
+        </section>
+
+        <!-- Impressum -->
+        <section id="imprint" aria-labelledby="imprint-title">
+            <h2 id="imprint-title">Impressum & Kontakt</h2>
+            <p>Flexify GmbH<br>
+               Inhaber: Dein Name<br>
+               Wien 1010, Österreich<br>
+               Email: <a href="mailto:deine@email.com">deine@email.com</a><br>
+               § 24 Mediengesetz-konform</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Dein Name. Projektarbeit. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>

@@ -1,115 +1,63 @@
-<section id="about">
-    <h2>Über uns & Unsere Identität</h2>
-    <p>Die Flexify GmbH ist ein Wiener Start-Up mit der Vision: KI-gestützte Meeting- und Organisationsoptimierung für große Unternehmen.<br>
-    Unsere Marke „Flexify“ mit dem blauen Elefanten steht für Stärke, Intelligenz und flexible Zusammenarbeit.</p>
-
-    <h2>Unsere eingetragenen Marken</h2>
-
-    <div class="marken-grid">
-        <div class="marke-card">
-            <img src="assets/wortbildmarke.jpg" alt="Flexify Wortbildmarke – Text mit blauem Elefanten">
-            <h3>Die Wortbildmarke</h3>
-            <p>Bedeutung: Kombination aus „Flexify“ und stilisiertem blauen Elefanten – symbolisiert Flexibilität und Stärke.<br>
-            <strong>Nizza-Klasse 9:</strong> Software; mobile Applikationen; herunterladbare Software.</p>
-        </div>
-
-        <div class="marke-card">
-            <img src="assets/bildmarke.jpg" alt="Flexify Bildmarke – blauer Elefant">
-            <h3>Die Bildmarke</h3>
-            <p>Bedeutung: Der blaue Elefant als Icon – 100% Fokus auf intelligente Organisation, sprachunabhängig.<br>
-            <strong>Nizza-Klasse 9:</strong> Herunterladbare Software; IoT-Geräte.</p>
-        </div>
-
-        <div class="marke-card">
-            <img src="assets/farbmarke.jpg" alt="Flexify Farbmarke – Dynamic Blue #42a5f5">
-            <h3>Die Farbmarke</h3>
-            <p>Definition: „Dynamic Blue“ (Hex: #42a5f5).<br>
-            Bedeutung: Vertrauen, Professionalität und Dynamik.<br>
-            <strong>Nizza-Klasse 42:</strong> Software-as-a-Service (SaaS); Technologische Beratung.</p>
-        </div>
-    </div>
-
-    <div class="markenschutz">
-        <h3>Markenschutz & Prüfung</h3>
-        <p>Vor Festlegung wurde eine Ähnlichkeitsrecherche durchgeführt.</p>
-        <ul>
-            <li><strong>Geprüfte Tools:</strong> TMview, EUIPO eSearch, Madrid Monitor.</li>
-            <li><strong>Ergebnis:</strong> Keine kollidierenden Einträge für „Flexify“ mit Elefanten-Icon in Klassen 9 und 42 (EU) gefunden.</li>
-            <li><strong>Unterscheidungskraft:</strong> Hohe Unterscheidungskraft durch einzigartige Kombination.</li>
-        </ul>
-    </div>
-</section>
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexify - KI-Plattform für effiziente Meetings & Organisation</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #42a5f5;
+            --primary-dark: #1976d2;
+            --background: #121212;
+            --surface: #1e1e1e;
+            --text: #e0e0e0;
+            --text-secondary: #aaaaaa;
+        }
+        body { font-family: 'Outfit', sans-serif; background: var(--background); color: var(--text); margin: 0; padding-top: 80px; }
+        header { position: relative; min-height: 100vh; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('https://www.smartsheet.com/sites/default/files/2024-04/dashboard-design-scheme-Deep-space.png') center/cover; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; }
+        .logo { position: absolute; top: 20px; left: 40px; height: 70px; }
+        .top-nav { position: fixed; top: 0; left: 0; width: 100%; background: #0a0a0a; padding: 12px 40px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 12px rgba(0,0,0,0.5); z-index: 1000; }
+        .top-nav a { color: var(--text-secondary); margin: 0 15px; text-decoration: none; }
+        .top-nav a:hover { color: var(--primary); }
+        h1 { font-size: 3.8rem; color: white; }
+        h2 { font-size: 2.4rem; text-align: center; margin: 80px 0 40px; color: white; }
+        p { max-width: 800px; margin: 0 auto 20px; }
+        .btn { background: white; color: #121212; padding: 14px 32px; border-radius: 50px; font-weight: 600; text-decoration: none; }
+        section { padding: 60px 40px; max-width: 1200px; margin: 0 auto; }
+        .marken-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .marke-card { background: var(--surface); padding: 30px; border-radius: 16px; text-align: center; box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+        .marke-card img { height: 120px; margin-bottom: 20px; }
+        .markenschutz { background: var(--surface); border-left: 5px solid var(--primary); padding: 30px; border-radius: 8px; margin-top: 60px; }
+        table { width: 100%; border-collapse: collapse; margin: 40px 0; background: var(--surface); }
+        th, td { padding: 15px; text-align: left; border-bottom: 1px solid #333; }
+        th { background: var(--primary-dark); color: white; }
+        footer { background: #0a0a0a; padding: 60px; text-align: center; color: var(--text-secondary); }
+        @media (max-width: 768px) { .top-nav { flex-direction: column; padding: 10px; } .top-nav a { margin: 10px 0; } }
+    </style>
 </head>
 <body>
 
+    <div class="top-nav">
+        <img src="https://elitelogomaker.com/storage/logomaker/design/logos/blue-elephant-with-customizable-design.webp" alt="Flexify Logo" class="logo">
+        <div>
+            <a href="#about">Über uns & Marken</a>
+            <a href="#features">Warum Flexify?</a>
+            <a href="#accessibility">Barrierefreiheit</a>
+            <a href="#copyright">Urheberrechte</a>
+            <a href="#license">Lizenz</a>
+            <a href="#privacy">Datenschutz</a>
+            <a href="#imprint">Impressum</a>
+        </div>
+    </div>
+
     <header>
-        <img src="assets/logo-flexify.svg" alt="Flexify Logo" class="logo">
-
-        <nav aria-label="Hauptnavigation">
-            <a href="#funktionen">Funktionen</a>
-            <a href="about.html">Über uns</a>
-            <a href="imprint.html">Kontakt</a>
-        </nav>
-
         <h1>Flexify deine Organisation.</h1>
-        <p>Die erste KI-gestützte Plattform, die Meetings optimiert, Zeit spart und deine Unternehmensprozesse flexibler macht.</p>
-        <a href="imprint.html#contact" class="btn">Jetzt Enterprise-Lizenz anfragen</a>
+        <p>Die KI-gestützte Plattform für effiziente Meetings und smarte Prozesse in großen Unternehmen.</p>
+        <a href="#imprint" class="btn">Enterprise-Lizenz anfragen</a>
     </header>
 
     <section id="about">
         <h2>Über uns & Unsere Identität</h2>
-        <p>Die Flexify GmbH ist ein Wiener Start-Up mit einer klaren Vision: Wir machen große Unternehmen agiler durch intelligente KI-gestützte Organisations-Tools.<br>
-        Unsere Marke „Flexify“ steht für Flexibilität, Effizienz und moderne Zusammenarbeit.</p>
-
-        <h2 style="margin-top: 80px;">Unsere eingetragenen Marken</h2>
-
-        <div class="marken-grid">
-            <div class="marke-card">
-                <img src="assets/wortbildmarke.svg" alt="Flexify Wortbildmarke">
-                <h3>Die Wortbildmarke</h3>
-                <p>Bedeutung: Die Kombination aus dynamischer Schrift und flexiblem Pfeil-Icon symbolisiert Agilität und Vorwärtsbewegung.<br>
-                <strong>Nizza-Klasse 9:</strong> Software; Applikationen für mobile Geräte.</p>
-            </div>
-
-            <div class="marke-card">
-                <img src="assets/bildmarke.svg" alt="Flexify Bildmarke">
-                <h3>Die Bildmarke</h3>
-                <p>Bedeutung: Das stilisierte Flex-Symbol steht als Icon für unser Versprechen: 100% Fokus auf flexible Organisation.<br>
-                <strong>Nizza-Klasse 9:</strong> Herunterladbare Software.</p>
-            </div>
-
-            <div class="marke-card">
-                <img src="assets/farbmarke.png" alt="Flexify Farbmarke – Dynamic Blue #42a5f5">
-                <h3>Die Farbmarke</h3>
-                <p>Definition: „Dynamic Blue“ (Hex: #42a5f5).<br>
-                Bedeutung: Strahlt Vertrauen, Professionalität und Dynamik aus.<br>
-                <strong>Nizza-Klasse 42:</strong> Software-as-a-Service (SaaS); Technologische Beratung.</p>
-            </div>
-        </div>
-
-        <div class="markenschutz">
-            <h3>Markenschutz & Prüfung</h3>
-            <p>Vor der Festlegung der Marke wurde eine Ähnlichkeitsrecherche durchgeführt, um Markenrechtsverletzungen auszuschließen.</p>
-            <ul>
-                <li><strong>Geprüfte Tools:</strong> TMview, EUIPO eSearch, Madrid Monitor.</li>
-                <li><strong>Ergebnis:</strong> Keine kollidierenden Einträge für „Flexify“ in den Klassen 9 und 42 im Geltungsbereich EU gefunden.</li>
-                <li><strong>Unterscheidungskraft:</strong> Die Marke verfügt über hinreichende Unterscheidungskraft und ist nicht rein beschreibend.</li>
-            </ul>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2026 Dein Name. Projektarbeit. Alle Rechte vorbehalten.</p>
-    </footer>
-
-</body>
-</html>
+        <p>Die Flexify GmbH ist ein Wiener Start-Up mit klarer Vision: KI für agile Organisation in Großunternehmen.<br>
+        Unsere Marke „Flexify“ mit dem blauen Elefanten steht für Stärke, Intelligenz und
